@@ -1,0 +1,552 @@
+
+body {
+  margin: 0;
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+  border: 0px;
+}
+
+::-moz-selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+::selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+.inriviera-search-box .mdl-textfield__input {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.inriviera-header .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+}
+
+
+.mdl-textfield--expandable {
+  width: auto;
+}
+
+.inriviera-fab {
+  position: absolute;
+  right: 20%;
+  bottom: -26px;
+  z-index: 3;
+  background: #64ffda !important;
+  color: black !important;
+}
+
+.inriviera-mobile-title {
+  display: none !important;
+}
+
+
+.inriviera-logo-image {
+  height: 28px;
+  width: 140px;
+}
+
+
+.inriviera-header {
+  overflow: visible;
+  background-color: white;
+}
+
+  .inriviera-header .material-icons {
+    color: #767777 !important;
+  }
+
+  .inriviera-header .mdl-layout__drawer-button {
+    background: transparent;
+    color: #767777;
+  }
+
+  .inriviera-header .mdl-navigation__link {
+    color: #757575;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .inriviera-navigation-container {
+    /* Simple hack to make the overflow happen to the left instead... */
+    direction: rtl;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 500px;
+    -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .inriviera-navigation {
+    /* ... and now make sure the content is actually LTR */
+    direction: ltr;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 800px;
+  }
+
+  .inriviera-search-box.is-focused + .inriviera-navigation-container {
+    opacity: 0;
+    width: 100px;
+  }
+
+
+  .inriviera-navigation .mdl-navigation__link {
+    display: inline-block;
+    height: 60px;
+    line-height: 68px;
+    background-color: transparent !important;
+    border-bottom: 4px solid transparent;
+  }
+
+    .inriviera-navigation .mdl-navigation__link:hover {
+      border-bottom: 4px solid #8bc34a;
+      cursor : pointer;
+    }
+
+  .inriviera-search-box {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+     margin-left: 16px; 
+    /* margin-right: 16px; */
+  }
+
+  .inriviera-more-button {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+
+.inriviera-drawer {
+  border-right: none;
+}
+
+  .inriviera-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+  }
+
+  .inriviera-drawer .mdl-navigation__link.mdl-navigation__link {
+    font-size: 14px;
+    color: #757575;
+  }
+
+  .inriviera-drawer span.mdl-navigation__link.mdl-navigation__link {
+    color: #8bc34a;
+  }
+
+  .inriviera-drawer .mdl-layout-title {
+    position: relative;
+    background: #6ab344;
+    height: 160px;
+  }
+
+    .inriviera-drawer .inriviera-logo-image {
+      position: absolute;
+      bottom: 16px;
+    }
+
+.inriviera-be-together-section {
+  position: relative;
+  height: 800px;
+  width: auto;
+  background-color: #f3f3f3;
+  background: url('images/slide01.jpg') center 30% no-repeat;
+  background-size: cover;
+}
+
+.logo-font {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color: #767777;
+  font-weight: 500;
+}
+
+.inriviera-slogan {
+  font-size: 60px;
+  padding-top: 160px;
+}
+
+.inriviera-sub-slogan {
+  font-size: 21px;
+  padding-top: 24px;
+}
+
+.inriviera-create-character {
+  font-size: 21px;
+  padding-top: 400px;
+}
+
+  .inriviera-create-character a {
+    text-decoration: none;
+    color: #767777;
+    font-weight: 300;
+  }
+
+.inriviera-screen-section {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.inriviera-screens {
+  text-align: right;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.inriviera-screen {
+  text-align: center;
+}
+
+.inriviera-screen .inriviera-link {
+  margin-top: 16px;
+  display: block;
+  z-index: 2;
+}
+
+.inriviera-image-link {
+  text-decoration: none;
+}
+
+.inriviera-wear {
+  display: inline-block;
+  width: 160px;
+  margin-right: 32px;
+}
+
+  .inriviera-wear .inriviera-screen-image {
+    width: 40%;
+    z-index: 1;
+  }
+
+
+.inriviera-phone {
+  display: inline-block;
+  width: 64px;
+  margin-right: 48px;
+}
+
+  .inriviera-phone .inriviera-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.inriviera-tablet {
+  display: inline-block;
+  width: 110px;
+  margin-right: 64px;
+}
+
+  .inriviera-tablet .inriviera-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .inriviera-tablet .inriviera-link {
+    display: block;
+    z-index: 2;
+  }
+
+
+.inriviera-tv {
+  display: inline-block;
+  width: 300px;
+  margin-right: 80px;
+}
+
+  .inriviera-tv .inriviera-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.inriviera-auto {
+  display: inline-block;
+  width: 300px;
+  overflow: hidden;
+}
+
+  .inriviera-auto .inriviera-screen-image {
+    display: block;
+    height: 300px;
+    z-index: 1;
+  }
+
+
+.inriviera-wear-section {
+  position: relative;
+  background: url('images/wear.png') center top no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.inriviera-wear-band {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #37474f;
+}
+
+.inriviera-wear-band-text {
+  max-width: 800px;
+  margin-left: 25%;
+  padding: 24px;
+  text-align: left;
+  color: white;
+}
+
+  .inriviera-wear-band-text p {
+    padding-top: 8px;
+  }
+
+.inriviera-link {
+  text-decoration: none;
+  color: #8bc34a !important;
+}
+
+  .inriviera-link:hover {
+    color: #7cb342 !important;
+  }
+
+  .inriviera-link .material-icons {
+    position: relative;
+    top: -2px;
+  }
+
+.inriviera-alt-link {
+  text-decoration: none;
+  color: #64ffda !important;
+  font-size: 16px;
+}
+
+  .inriviera-alt-link:hover {
+    color: #00bfa5 !important;
+  }
+
+  .inriviera-alt-link .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+.inriviera-customized-section {
+  text-align: center;
+}
+
+.inriviera-customized-section-text {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 16px 0 16px;
+}
+
+  .inriviera-customized-section-text p {
+    padding-top: 16px;
+  }
+
+.inriviera-customized-section-image {
+  background: url('images/devices.jpg') center top no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.inriviera-more-section {
+  /* padding: 80px 0; */
+  max-width: 1044px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .inriviera-more-section .inriviera-section-title {
+    margin-left: 12px;
+    /* padding-bottom: 12px; */
+    padding: 6px;
+  }
+
+.inriviera-card-container {
+}
+
+  .inriviera-card-container .mdl-card__media {
+    overflow: hidden;
+    background: transparent;
+  }
+
+    .inriviera-card-container .mdl-card__media img {
+      width: 100%;
+    }
+
+  .inriviera-card-container .mdl-card__title {
+    background: transparent;
+    height: auto;
+  }
+
+  .inriviera-card-container .mdl-card__title-text {
+    color: black;
+    height: auto;
+  }
+
+  .inriviera-card-container .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 48px;
+  }
+
+  .inriviera-card-container .mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+    /* padding-top: 16px; */
+  }
+
+  .inriviera-card-container .mdl-card__actions a {
+    border-top: none;
+    line-height: 24px;
+    font-size: 16px;
+    /* padding-top: 10px; */
+    /* margin-top: 8px; */
+  }
+
+.inriviera-footer {
+  background-color: #fafafa;
+  position: relative;
+}
+
+  .inriviera-footer a:hover {
+    color: #8bc34a;
+  }
+
+  .inriviera-footer .mdl-mega-footer--top-section::after {
+    border-bottom: none;
+  }
+
+  .inriviera-footer .mdl-mega-footer--middle-section::after {
+    border-bottom: none;
+  }
+
+  .inriviera-footer .mdl-mega-footer--bottom-section {
+    position: relative;
+  }
+
+  .inriviera-footer .mdl-mega-footer--bottom-section a {
+    margin-right: 2em;
+  }
+
+  .inriviera-footer .mdl-mega-footer--right-section a .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+
+.inriviera-link-menu:hover {
+  cursor: pointer;
+}
+
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .inriviera-navigation-container {
+    display: none;
+  }
+
+  .inriviera-title {
+    display: none !important;
+  }
+
+  .inriviera-mobile-title {
+    display: block !important;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 12px;
+    -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
+     consecutive "+" operators in some cases. Therefore, we need to use both
+     here to cover all the bases. */
+  .inriviera.inriviera-search-box.is-focused ~ .inriviera-mobile-title,
+  .inriviera-search-box.is-focused + .inriviera-navigation-container + .inriviera-mobile-title {
+    opacity: 0;
+  }
+
+  .inriviera-more-button {
+    display: none;
+  }
+
+  .inriviera-search-box.is-focused {
+    width: calc(100% - 48px);
+  }
+
+  .inriviera-search-box .mdl-textfield__expandable-holder {
+    width: 100%;
+  }
+
+  .inriviera-be-together-section {
+    height: 350px;
+  }
+
+  .inriviera-slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 24px;
+  }
+
+  .inriviera-sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
+  }
+
+  .inriviera-create-character {
+    padding-top: 200px;
+    font-size: 16px;
+  }
+
+  .inriviera-create-character img {
+    height: 12px;
+  }
+
+  .inriviera-fab {
+    display: none;
+  }
+
+  .inriviera-wear-band-text {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .inriviera-footer .mdl-mega-footer--bottom-section {
+    display: none;
+  }
+}
+
+.inriviera-link:hover {
+    cursor :    pointer;
+}
+
+
+
+@media (max-width: 375px) {
+    
+    .inriviera-search-box{
+        display:none;
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "data": [
+        {
+            "title": "Musée Matisse",
+            "media": "http://lewebpedagogique.com/peinturefle/files/2012/10/matisse-polynesie1.jpg",
+            "description": "<p>The Matisse Museum is situated on the hill of Cimiez, not far from the Franciscan monastery with its Italianate gardens, the Hotel Regina where Matisse used to reside, and the Gallo-Roman ruins. Since the 5th of January 1963 the Museum has been welcoming vistors to its collection of works left by the artist (and his heirs) to the city of Nice where he lived from 1918 until 1954.</p>",
+            "action": "Access the gallery",
+            "target": "http://www.musee-matisse-nice.org/"
+        },
+        {
+            "title": "Musée Picasso",
+            "media": "https://s-media-cache-ak0.pinimg.com/564x/0a/fe/b8/0afeb818a3d50b3bf7524b720191d666.jpg",
+            "description": "<p>Picasso demonstrated extraordinary artistic talent in his early years, painting in a naturalistic manner through his childhood and adolescence. During the first decade of the 20th century, his style changed as he experimented with different theories, techniques, and ideas. His work is often categorized into periods.</p>",
+            "action": "Go to Antibes",
+            "target": "http://http://www.antibes-juanlespins.com/culture/musee-picasso"
+        },
+        {
+            "title": "Musée Marc Chagall",
+            "media": "http://foxoo.com/_internautes/0000018301/150911151557/the-concert-1957%20110915.jpg",
+            "description": "<p>The museum was created during the lifetime of the artist, with the support of the Minister of Culture André Malraux, and inaugurated in 1973.[1] It is also known as the National Museum Marc Chagall Biblical Message as it houses the series of seventeen paintings illustrating the biblical message, painted by Chagall and offered to the French State in 1966. This series illustrates the books of Genesis, Exodus and the Song of Songs.</p>",
+            "action": "Visit",
+            "target": "https://en.wikipedia.org/wiki/Mus%C3%A9e_Marc_Chagall"
+        }
+    ]
+}

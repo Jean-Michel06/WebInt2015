@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Near you!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>In Riviera</title>
+
+        <!-- Page styles -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.deep_orange-pink.min.css" />
+
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/inriviera.css">
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+        <script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+        <script type="text/javascript" src="js/user.js"></script>
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+            <header class="inriviera-header mdl-layout__header mdl-layout__header--waterfall">
+                <div class="mdl-layout__header-row">
+                    <span class="inriviera-title mdl-layout-title">
+                        <img class="inriviera-logo-image" src="images/inriviera-logo.png" alt="In Riviera">
+                    </span>
+                    <!-- Add spacer, to align navigation to the right in desktop -->
+                    <div class="inriviera-header-spacer mdl-layout-spacer"></div>
+                    <div class="inriviera-search-box"></div>
+                    <!-- Navigation -->
+                    <div class="inriviera-navigation-container">
+                        <nav class="inriviera-navigation mdl-navigation">
+                            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html">BACK</a>
+                        </nav>
+                    </div>
+                    <span class="inriviera-mobile-title mdl-layout-title">
+                        <img class="inriviera-logo-image" src="images/inriviera-logo.png" alt="In Riviera">
+                    </span>
+                </div>
+            </header>
+
+            <aside class="inriviera-drawer mdl-layout__drawer">
+                <span class="mdl-layout-title">
+                    <img class="inriviera-logo-image" src="images/inriviera-logo-white.png" alt="In Riviera">
+                </span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link inriviera-link"  href="index.html">BACK</a>
+                </nav>
+            </aside>
+
+            <section class="inriviera-content mdl-layout__content">
+                <div class="inriviera-more-section">
+
+                    <!-- Wide card with share menu button -->
+                    <style>
+                        .demo-card-wide.mdl-card {
+                            margin: 2em auto;
+                        }
+                        .demo-card-wide > .mdl-card__title {
+                            color: #fff;
+                            height: 176px;
+                            background: url('./images/profile.png') center / cover;
+                        }
+                        .demo-card-wide > .mdl-card__menu {
+                            color: #fff;
+                        }
+                    </style>
+
+                    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">T'Choupi</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            Always happy to be in class...
+                        </div>
+                    </div>
+
+                    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                        <div id="map" style="width:100%; height:200px;line-height: 1.0em;"></div>
+                        <div>
+                            <input type="text" placeholder="Type an address here" id="address" style="width:100%;float:left;box-sizing: border-box;" />
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </section>
+        </div>
+
+        <script>
+            window.onload = function () {
+                initMap();
+            };
+        </script>
+    </body>
+
+</html>

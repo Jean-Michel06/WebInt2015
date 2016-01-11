@@ -1,0 +1,25 @@
+{
+    "data": [
+        {
+            "title": "Polygone Riviera: the mega mall",
+            "media": "http://www.polygone-riviera.fr/W/cms_sites/SITE_122753/polygone/images/content/home/poster.jpg",
+            "description": "<p>The only lifestyle mall in France under an open sky is how Polygone Riviera is being promoted ahead of its October 2015 inauguration. The framework of the 70,000-square-foot consumer temple is complete and around 73% of its retail stores have been decided, with big names including Bershka, Levi’s, Mango, Sephora, Pull & Bear, Zara, Printemps, Zadig & Voltaire, and American Vintage all signed up.</p>",
+            "action": "Shop now",
+            "target": "http://www.polygone-riviera.fr/"
+        },
+        {
+            "title": "CAP 3000: the place to shop",
+            "media": "http://img.grouponcdn.com/deal/qS8xu3tUhJYTfXzGkvoS/Qf-960x576/v1/c700x420.jpg",
+            "description": "<p>Cap3000 is a veritable institution at the heart of the French Riviera: a shopping mall in a fabulous location, standing on the shores of the Mediterranean Sea. It offers an attractive and diversified range of shops for all the family, from major high-street names to small boutiques. There's something for all tastes and all budgets! You can meander through the mall until 9pm from Monday to Saturday.</p>",
+            "action": "See the shops",
+            "target": "http://www.cap3000.com/"
+        },
+        {
+            "title": "Nicetoile",
+            "media": "http://v2.levieuxnice.fr/showphoto.php?ref=304&type=timeline",
+            "description": "<p></p>",
+            "action": "In the center of Nice",
+            "target": "http://www.nicetoile.com/"
+        }
+    ]
+}

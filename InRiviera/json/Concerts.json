@@ -1,0 +1,27 @@
+{
+    "data": [
+        { 
+            "title": "Nice Jazz Festival",
+            "ogg":"https://archive.org/download/Cess-JazzVideo378/Cess-JazzVideo378.ogv",
+            "mp4":"https://archive.org/download/Cess-JazzVideo378/Cess-JazzVideo378_512kb.mp4",
+            "media": "http://www.nicejazzfestival.fr/uploads/media/photo/0001/01/thumb_432_photo_big.jpeg",
+            "description": "<p>The Nice Jazz Festival, a major footprint in the history of jazz. From 7th to 12th July 2016, the Nice Jazz Festival will again host the best of national and international music for 5 consecutive nights, with an exceptional extra evening to close the festivities. The Nice Jazz Festival is the first of the great French jazz festivals to open wide his arms to the new generation: it reflects the jazz of today and tomorrow through its line up. Jazz will mix with electro to hip hop with a touch of funk disco.</p><p>A prestigious festival with the new setting of the “Promenade du Paillon . The Promenade Paillon was inaugurated in October 2013 and the Nice Jazz Festival can enjoy its enchanting setting. The Nice Jazz Festival In and Off welcomed over 45,000 spectators who attended the outdoor party eagerly awaited by all the French Riviera. Numerous world reknowned artists have again graced the Massena stage and the Theatre de Verdure to name but a few Richard Galliano, Keziah Jones, Ibrahim Maalouf, Joshua Redman and living legends such as the Gipsy Kings, Deep Purple or Dr. John.</p>",
+            "action": "More information",
+            "target": "http://www.nicejazzfestival.fr/"
+        },
+        {
+            "title": "AC/DC",
+            "media": "http://s3.amazonaws.com/busites_www/acdccom/content/images/image1.JPG?_sm_au_=icsVrJ378HtRR7Wr",
+            "description": "<p>AC/DC is back in France for a concert in Marseille only on May 13th 2016.<p><p>AC/DC are an Australian hard rock band, formed in November 1973 by brothers Malcolm and Angus Young, who continued as members until Malcolm's illness and departure in 2014. Commonly referred to as a hard rock or blues rock band, they are also considered pioneers of heavy metal and are sometimes classified as such, though they have always dubbed their music as simply rock and roll.</p>",
+            "action": "Book now",
+            "target": "https://www.nikaia.fr/"
+        },
+        {
+            "title": "Cold Play",
+            "media": "http://media.gettyimages.com/photos/singer-of-coldplay-chris-martin-on-stage-at-palais-nikaia-stade-on-picture-id145024078",
+            "description": "<p>Coldplay stated the world tour calld  A head full of dreams tour », they will peform in Nice, in the stadium  Charles-Erhmann – Nikaia on 24 May 2016</p>",
+            "action": "Book now",
+            "target": "http://www.acdc.com/"
+        }
+    ]
+}
