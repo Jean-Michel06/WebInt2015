@@ -11,160 +11,159 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.deep_orange-pink.min.css" />
-
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/inriviera.css">
+        <!-- Page scripts -->
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
         <script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
         <script type="text/javascript" src="js/inriviera.js"></script>
     </head>
-    <body>
-        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <body class="mdl-layout mdl-js-layout mdl-layout--fixed-header" itemscope itemtype="http://schema.org/CollectionPage">
 
-            <header class="inriviera-header mdl-layout__header mdl-layout__header--waterfall">
-                <div class="mdl-layout__header-row">
-                    <span class="inriviera-title mdl-layout-title">
-                        <img class="inriviera-logo-image" src="images/inriviera-logo.png" alt="">
-                    </span>
-                    <!-- Add spacer, to align navigation to the right in desktop -->
-                    <div class="inriviera-header-spacer mdl-layout-spacer"></div>
-                    <div class="inriviera-search-box">
-                        <div class="ir-profile">
-                            <a href="user.html"><img src="images/profile.png" alt="Me" /></a>
+        <header class="inriviera-header mdl-layout__header mdl-layout__header--waterfall">
+            <div class="mdl-layout__header-row">
+                <span class="inriviera-title mdl-layout-title">
+                    <img class="inriviera-logo-image" src="images/inriviera-logo.png" alt="" itemprop="image">
+                </span>
+                <!-- Add spacer, to align navigation to the right in desktop -->
+                <div class="inriviera-header-spacer mdl-layout-spacer"></div>
+                <div class="inriviera-search-box">
+                    <div class="ir-profile">
+                        <a href="user.html"><img src="images/profile.png" alt="Me" /></a>
+                    </div>
+                    <div id="position-nav" class="position-nav"  style="display:none;">
+                        <a href="user.html" >
+                            <img src="images/position.png" alt="Here" />
+                            <span id="position-nav-location"></span>
+                        </a>
+                    </div>
+                    <div id="position-nav-lost"  class="position-nav"  >
+                        <img src="images/position_lost.png" alt="Lost" />
+                        <span>Not located</span>
+                    </div>
+                </div>
+                <!-- Navigation -->
+                <div class="inriviera-navigation-container">
+                    <nav class="inriviera-navigation mdl-navigation"  itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <span class="mdl-navigation__link mdl-typography--text-uppercase" onclick="update(this.innerHTML);" itemprop="category">Concerts</span>
+                        <span class="mdl-navigation__link mdl-typography--text-uppercase" onclick="update(this.innerHTML);" itemprop="category">Culture</span>
+                        <span class="mdl-navigation__link mdl-typography--text-uppercase" onclick="update(this.innerHTML);" itemprop="category">Shopping</span>
+                    </nav>
+                </div>
+                <span class="inriviera-mobile-title mdl-layout-title">
+                    <img class="inriviera-logo-image" src="images/inriviera-logo.png" alt="In Riviera">
+                </span>
+            </div>
+        </header>
+
+        <aside class="inriviera-drawer mdl-layout__drawer">
+            <span class="mdl-layout-title">
+                <img class="inriviera-logo-image" src="images/inriviera-logo-white.png" alt="In Riviera">
+            </span>
+            <nav class="mdl-navigation">
+                <a href="user.html" class="profile-side">
+                    <div class="ir-profile ir-profile-center">
+                        <img src="images/profile.png" alt="" />
+                    </div>
+                    <span class="ir-profile-center">T'Choupi</span>
+                </a>
+                <div class="inriviera-drawer-separator"></div>
+                <div id="position-side" class="position-side"  style="display:none;">
+                    <a href="user.html" class="position-side" >
+                        <img src="images/position.png" alt="" />
+                        <span id="position-side-location"></span>
+                    </a>
+                </div>
+                <div id="position-side-lost"  >
+                    <a href="" class="position-side" >
+                        <img src="images/position_lost.png" alt="" class="position-side" />
+                        <span>Not located</span>
+                    </a>
+                </div>
+                <div class="inriviera-drawer-separator"></div>
+                <span class="mdl-navigation__link inriviera-link"  onclick="update(this.innerHTML);">Concerts</span>
+                <span class="mdl-navigation__link inriviera-link"  onclick="update(this.innerHTML);">Culture</span>
+                <span class="mdl-navigation__link inriviera-link"  onclick="update(this.innerHTML);">Shopping</span> 
+            </nav>
+        </aside>
+
+        <!-- Scrolling area -->
+        <div class="inriviera-content mdl-layout__content">
+            <section class="inriviera-more-section">
+                <h3 class="inriviera-section-title mdl-typography--display-1-color-contrast" id="page-title">Loading...</h3>
+
+                <div class="inriviera-card-container mdl-grid mdl-grid">
+                    <article class="mdl-cell  mdl-cell--8-col mdl-cell--12-col-tablet mdl-card mdl-shadow--3dp">
+                        <div class="mdl-card__media" id="ir-card-media-0">
+                            <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active" style="margin:1em;"></div>
                         </div>
-                        <div id="position-nav" class="position-nav"  style="display:none;">
-                            <a href="user.html" >
-                                <img src="images/position.png" alt="Here" />
-                                <span id="position-nav-location"></span>
+                        <div class="mdl-card__title">
+                            <h4 id="ir-card-title-0" class="mdl-card__title-text">&nbsp;</h4>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <span id="ir-card-text-0" class="mdl-typography--font-light mdl-typography--subhead"></span>
+                        </div>
+                        <div class="mdl-card__actions">
+                            <a id="ir-card-link-0" class="inriviera-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                                <span id="ir-card-link-text-0"></span>
+                                <i class="material-icons">chevron_right</i>
                             </a>
                         </div>
-                        <div id="position-nav-lost"  class="position-nav"  >
-                            <img src="images/position_lost.png" alt="user.html" />
-                            <span>Not located</span>
-                        </div>
-                    </div>
-                    <!-- Navigation -->
-                    <div class="inriviera-navigation-container">
-                        <nav class="inriviera-navigation mdl-navigation">
-                            <span class="mdl-navigation__link mdl-typography--text-uppercase" onclick="update(this.innerHTML);">Concerts</span>
-                            <span class="mdl-navigation__link mdl-typography--text-uppercase" onclick="update(this.innerHTML);">Culture</span>
-                            <span class="mdl-navigation__link mdl-typography--text-uppercase" onclick="update(this.innerHTML);">Shopping</span>
-                        </nav>
-                    </div>
-                    <span class="inriviera-mobile-title mdl-layout-title">
-                        <img class="inriviera-logo-image" src="images/inriviera-logo.png" alt="In riviera">
-                    </span>
-                </div>
-            </header>
+                    </article>
 
-            <aside class="inriviera-drawer mdl-layout__drawer">
-                <span class="mdl-layout-title">
-                    <img class="inriviera-logo-image" src="images/inriviera-logo-white.png" alt="In Riviera">
-                </span>
-                <nav class="mdl-navigation">
-                    <a href="user.html" class="profile-side">
-                        <div class="ir-profile ir-profile-center">
-                            <img src="images/profile.png" alt="" />
-                        </div>
-                        <span class="ir-profile-center">T'Choupi</span>
-                    </a>
-                    <div class="inriviera-drawer-separator"></div>
-                    <div id="position-side" class="position-side"  style="display:none;">
-                        <a href="user.html" class="position-side" >
-                            <img src="images/position.png" alt="" />
-                            <span id="position-side-location"></span>
-                        </a>
-                    </div>
-                    <div id="position-side-lost"  >
-                        <a href="" class="position-side" >
-                            <img src="images/position_lost.png" alt="" class="position-side" />
-                            <span>Not located</span>
-                        </a>
-                    </div>
-                    <div class="inriviera-drawer-separator"></div>
-                    <span class="mdl-navigation__link inriviera-link"  onclick="update(this.innerHTML);">Concerts</span>
-                    <span class="mdl-navigation__link inriviera-link"  onclick="update(this.innerHTML);">Culture</span>
-                    <span class="mdl-navigation__link inriviera-link"  onclick="update(this.innerHTML);">Shopping</span> 
-                </nav>
-            </aside>
-
-            <section class="inriviera-content mdl-layout__content">
-                <div class="inriviera-more-section">
-                    <h3 class="inriviera-section-title mdl-typography--display-1-color-contrast" id="page-title">...</h3>
-
-                    <div class="inriviera-card-container mdl-grid mdl-grid">
-                        <article class="mdl-cell  mdl-cell--8-col mdl-cell--12-col-tablet mdl-card mdl-shadow--3dp">
-                            <div class="mdl-card__media" id="ir-card-media-0">
-                                <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active" style="margin:1em;"></div>
+                    <div class="mdl-cell  mdl-cell--4-col mdl-cell--12-col-tablet mdl-grid mdl-cell--stretch" style="padding:0px;margin:0px;">
+                        <article class="mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet  mdl-card mdl-shadow--3dp">
+                            <div class="mdl-card__media" id="ir-card-media-1">
+                                <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"  style="margin:1em;"></div>
                             </div>
-                            <div class="mdl-card__title">
-                                <h4 id="ir-card-title-0" class="mdl-card__title-text"></h4>
+                            <div class="mdl-card__title mdl-cell--hide-desktop">
+                                <h4 id="ir-card-title-1" class="mdl-card__title-text">&nbsp;</h4>
                             </div>
                             <div class="mdl-card__supporting-text">
-                                <span id="ir-card-text-0" class="mdl-typography--font-light mdl-typography--subhead"></span>
+                                <span id="ir-card-text-1" class="mdl-typography--font-light mdl-typography--subhead"></span>
                             </div>
                             <div class="mdl-card__actions">
-                                <a id="ir-card-link-0" class="inriviera-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                                    <span id="ir-card-link-text-0"></span>
+                                <a id="ir-card-link-1" class="inriviera-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                                    <span id="ir-card-link-text-1"></span>
                                     <i class="material-icons">chevron_right</i>
                                 </a>
                             </div>
                         </article>
 
-                        <div class="mdl-cell  mdl-cell--4-col mdl-cell--12-col-tablet mdl-grid mdl-cell--stretch" style="padding:0px;margin:0px;">
-                            <article class="mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet  mdl-card mdl-shadow--3dp">
-                                <div class="mdl-card__media" id="ir-card-media-1">
-                                    <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"  style="margin:1em;"></div>
-                                </div>
-                                <div class="mdl-card__title mdl-cell--hide-desktop">
-                                    <h4 id="ir-card-title-1" class="mdl-card__title-text"></h4>
-                                </div>
-                                <div class="mdl-card__supporting-text">
-                                    <span id="ir-card-text-1" class="mdl-typography--font-light mdl-typography--subhead"></span>
-                                </div>
-                                <div class="mdl-card__actions">
-                                    <a id="ir-card-link-1" class="inriviera-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                                        <span id="ir-card-link-text-1"></span>
-                                        <i class="material-icons">chevron_right</i>
-                                    </a>
-                                </div>
-                            </article>
-
-                            <article class="mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet  mdl-card mdl-shadow--3dp">
-                                <div class="mdl-card__media" id="ir-card-media-2">
-                                    <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"  style="margin:1em;"></div>
-                                </div>
-                                <div class="mdl-card__title mdl-cell--hide-desktop">
-                                    <h4 id="ir-card-title-2" class="mdl-card__title-text"></h4>
-                                </div>
-                                <div class="mdl-card__supporting-text">
-                                    <span id="ir-card-text-2" class="mdl-typography--font-light mdl-typography--subhead"></span>
-                                </div>
-                                <div id="ir-card-link-2" class="mdl-card__actions">
-                                    <a class="inriviera-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                                        <span id="ir-card-link-text-2"></span>
-                                        <i class="material-icons">chevron_right</i>
-                                    </a>
-                                </div>
-                            </article>
-                        </div>
+                        <article class="mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet  mdl-card mdl-shadow--3dp">
+                            <div class="mdl-card__media" id="ir-card-media-2">
+                                <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"  style="margin:1em;"></div>
+                            </div>
+                            <div class="mdl-card__title mdl-cell--hide-desktop">
+                                <h4 id="ir-card-title-2" class="mdl-card__title-text">&nbsp;</h4>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span id="ir-card-text-2" class="mdl-typography--font-light mdl-typography--subhead"></span>
+                            </div>
+                            <div id="ir-card-link-2" class="mdl-card__actions">
+                                <a class="inriviera-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                                    <span id="ir-card-link-text-2"></span>
+                                    <i class="material-icons">chevron_right</i>
+                                </a>
+                            </div>
+                        </article>
                     </div>
                 </div>
-
-                <footer class="inriviera-footer mdl-mega-footer">
-                    <div class="mdl-mega-footer--bottom-section">
-                        <a class="inriviera-link mdl-typography--font-light" href="index.html">Reload</a>
-                    </div>
-                </footer>
             </section>
+
+
+            <footer class="inriviera-footer mdl-mega-footer">
+                <div class="mdl-mega-footer--middle-section">
+                    <span itemprop="copyrightHolder">In Riviera</span> &copy; <span itemprop="copyrightYear">2016</span> - <span itemprop="about">New and noteworthy around you</span>
+                </div>
+            </footer>
         </div>
 
         <script>
             window.onload = function () {
                 showPosition();
-                update("Concerts");
+                update();
             };
         </script>
     </body>
-
 </html>

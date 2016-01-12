@@ -1,28 +1,26 @@
-
-
 .ir-profile {
-  width: 40px;
-  height:40px;
-  position: relative;
-  border-radius: 100%;
-  overflow: hidden;
-  /* float: right; */
-  margin-right: 0.5em;
-  margin-left: auto;
-  border : 1px black solid;
-  margin: 0px;
-  display: inline-block;
+    width: 40px;
+    height:40px;
+    position: relative;
+    border-radius: 100%;
+    overflow: hidden;
+    /* float: right; */
+    margin-right: 0.5em;
+    margin-left: auto;
+    border : 1px black solid;
+    margin: 0px;
+    display: inline-block;
 }
 .ir-profile img {
-  position: absolute;
-  left: -00%;
-  right: -50%;
-  top: 0;
-  margin: auto;
-  height: 100%;
-  width: auto;
-  padding: 0px;
-  margin: 0px;
+    position: absolute;
+    left: -00%;
+    right: -50%;
+    top: 0;
+    margin: auto;
+    height: 100%;
+    width: auto;
+    padding: 0px;
+    margin: 0px;
 }
 
 .ir-profile-center {
@@ -52,7 +50,7 @@
     height:20px;
     width: auto;
     display:block;
-     margin-left:auto;
+    margin-left:auto;
     margin-right:auto;
 }
 
@@ -84,6 +82,13 @@
     display:table-cell;
     color:black;
     overflow-x: hidden;
+}
+
+.mdl-mega-footer--middle-section {
+    text-align: center;
+    border-top: 1px solid #9e9e9e;
+    max-width: 840px;
+    margin: 0.5em auto;
 }
 
 
